@@ -1,22 +1,45 @@
 {
   "name": "PR2StudioSwift3",
-  "version": "0.1.0",
-  "summary": "A short description of PR2StudioSwift3.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.3.0",
+  "summary": "Swift 3 base library used for PR2Studio projects",
+  "description": "PR2StudioSwift3 is the base library for developing Swift 3 projects. Most of the projects\nfrom PR2Studio uses it.",
   "homepage": "https://github.com/pablorocar/PR2StudioSwift3",
-  "license": {
-    "type": "MIT",
-    "file": "LICENSE"
-  },
+  "license": "MIT",
   "authors": {
-    "pablorocar": "pablo@kabbee.com"
+    "Pablo Roca Rozas": "pablorocar@gmail.com"
   },
   "source": {
     "git": "https://github.com/pablorocar/PR2StudioSwift3.git",
-    "tag": "0.1.0"
+    "tag": "0.3.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "PR2StudioSwift3/Classes/**/*"
+  "source_files": "PR2StudioSwift3/Classes/**/*",
+  "dependencies": {
+    "Alamofire": [
+      "~> 4.4"
+    ],
+    "AlamofireImage": [
+      "~> 3.1"
+    ]
+  },
+  "default_subspecs": "Lite",
+  "subspecs": [
+    {
+      "name": "Lite"
+    },
+    {
+      "name": "Crypto",
+      "xcconfig": {
+        "OTHER_SWIFT_FLAGS": "$(inherited) -DPR2_OFFER_CRYPTO"
+      },
+      "dependencies": {
+        "CryptoSwift": [
+
+        ]
+      },
+      "source_files": "PR2StudioSwift3/Classes/**/*"
+    }
+  ]
 }
