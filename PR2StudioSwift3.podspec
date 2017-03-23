@@ -22,11 +22,11 @@ PR2StudioSwift3 is the base library for developing Swift 3 projects. Most of the
 from PR2Studio uses it.
                        DESC
 
-  s.homepage         = 'https://github.com/pablorocar/PR2StudioSwift3'
+  s.homepage         = 'https://github.com/pabloroca/PR2StudioSwift3'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = 'MIT'
   s.author           = { "Pablo Roca Rozas" => "pablorocar@gmail.com" }
-  s.source           = { :git => 'https://github.com/pablorocar/PR2StudioSwift3.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/pabloroca/PR2StudioSwift3.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
 

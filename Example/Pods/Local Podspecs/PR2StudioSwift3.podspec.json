@@ -1,6 +1,6 @@
 {
   "name": "PR2StudioSwift3",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "Swift 3 base library used for PR2Studio projects",
   "description": "PR2StudioSwift3 is the base library for developing Swift 3 projects. Most of the projects\nfrom PR2Studio uses it.",
   "homepage": "https://github.com/pablorocar/PR2StudioSwift3",
@@ -28,18 +28,6 @@
   "subspecs": [
     {
       "name": "Lite"
-    },
-    {
-      "name": "Crypto",
-      "xcconfig": {
-        "OTHER_SWIFT_FLAGS": "$(inherited) -DPR2_OFFER_CRYPTO"
-      },
-      "dependencies": {
-        "CryptoSwift": [
-
-        ]
-      },
-      "source_files": "PR2StudioSwift3/Classes/**/*"
     }
   ]
 }
