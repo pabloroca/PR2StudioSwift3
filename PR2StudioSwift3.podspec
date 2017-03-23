@@ -30,7 +30,7 @@ from PR2Studio uses it.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'PR2StudioSwift3/Classes/**/*'
+  # s.source_files = 'PR2StudioSwift3/Classes/**/*'
   s.dependency 'Alamofire', '~> 4.4'
   s.dependency 'AlamofireImage', '~> 3.1'
   s.default_subspec = 'Lite'
@@ -39,11 +39,11 @@ from PR2Studio uses it.
   # subspec for users who don't want the third party CryptoSwift
   end
 
-  s.subspec 'Crypto' do |crypto|
-    crypto.xcconfig	=
-    { 'OTHER_SWIFT_FLAGS' => '$(inherited) -DPR2_OFFER_CRYPTO' }
-    crypto.dependency	'CryptoSwift'
-    crypto.source_files = 'PR2StudioSwift3/Classes/**/*'
-  end
+#  s.subspec 'Crypto' do |crypto|
+#    crypto.xcconfig	=
+#    { 'OTHER_SWIFT_FLAGS' => '$(inherited) -DPR2_OFFER_CRYPTO' }
+#    crypto.dependency	'CryptoSwift'
+#    crypto.source_files = 'PR2StudioSwift3/Classes/**/*'
+#  end
 
 end
