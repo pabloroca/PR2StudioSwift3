@@ -1,0 +1,22 @@
+PODS:
+  - Nimble (5.1.1)
+  - PR2StudioSwift3 (0.1.0)
+  - Quick (1.0.0)
+
+DEPENDENCIES:
+  - Nimble (~> 5.1.1)
+  - PR2StudioSwift3 (from `../`)
+  - Quick (~> 1.0.0)
+
+EXTERNAL SOURCES:
+  PR2StudioSwift3:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
+  PR2StudioSwift3: 699fc3122e77895fea570474008424db0b78cf8f
+  Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
+
+PODFILE CHECKSUM: 4b7c46ffb3c8d7152692b558fcaad009edf33895
+
+COCOAPODS: 1.2.0
