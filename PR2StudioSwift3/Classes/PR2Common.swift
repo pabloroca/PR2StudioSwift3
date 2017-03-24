@@ -4,7 +4,6 @@
 //  Created by Pablo Roca Rozas on 24/1/16.
 //  Copyright © 2016 PR2Studio. All rights reserved.
 //
-
 // Common functions for any project
 
 import Foundation
